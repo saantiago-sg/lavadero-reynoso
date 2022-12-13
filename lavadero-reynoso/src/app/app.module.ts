@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { APP_ROUTING } from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
+import { AnimateModule } from 'primeng/animate';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -22,6 +23,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     APP_ROUTING,
+    AnimateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
