@@ -10,7 +10,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({
+      once: true
+    });
   }
 
 }

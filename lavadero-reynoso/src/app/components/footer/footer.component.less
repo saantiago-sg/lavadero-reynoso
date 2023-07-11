@@ -1,7 +1,8 @@
-p{
-    margin-bottom: 0px!important;
+p {
+    margin-bottom: 0px !important;
 }
-.footer-card{
+
+.footer-card {
     background-image: url("../../../assets/images/background-brand.png");
     background-size: cover;
     display: flex;
@@ -10,15 +11,18 @@ p{
     padding-top: 50px;
     color: white;
 }
-.footer-card .services{
+
+.footer-card .services {
     font-size: 29px;
     margin-bottom: 35px;
 }
-.item-card{
+
+.item-card {
     text-align: center;
     margin-bottom: 40px;
 }
-.item-card .circle-img{
+
+.item-card .circle-img {
     border: 1px solid;
     border-radius: 50%;
     width: 185px;
@@ -30,22 +34,25 @@ p{
     margin-right: auto;
     height: 175px;
 }
-.item-card img{
+
+.item-card img {
     min-width: 160px;
     padding: 5px;
 }
-.item-card p{
+
+.item-card p {
     font-size: 17px;
     padding: 0px 15px;
 }
+
 //
-.contact-me{
-    // background-color: rgb(236, 236, 187);
+.contact-me {
     background-image: url("../../../assets/images/background-tools.png");
     padding: 30px 10px;
     padding-bottom: 50px;
 }
-.contact-me h2{
+
+.contact-me h2 {
     color: black;
     text-align: center;
     border-bottom: 2px solid;
@@ -55,35 +62,148 @@ p{
     padding-bottom: 10px;
     margin-bottom: 40px;
 }
-.card{
+
+.card {
     background-color: white;
     padding: 40px 10px;
 }
-.contact-me p, .contact-row a{
+
+.contact-me p,
+.contact-row a {
     color: black;
     text-align: center;
     letter-spacing: 1px;
     text-decoration: none;
 }
+
 .sub-box i {
     font-size: 1.5rem;
 }
-.contact-row{
+
+.contact-row {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact-row p, .contact-row a{
+
+.contact-row p,
+.contact-row a {
     padding-left: 10px;
     margin-top: 0px;
 }
-.contact-me .img-camaro{
+
+.contact-me .img-camaro {
     width: 100%;
-    // margin-top: -40px;
 }
-.copyright{
+
+.copyright {
     background-color: #000;
     padding: 20px 10px;
     text-align: center;
     color: white;
+}
+
+// contact me
+.get-date {
+    background-color: #292929;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.get-date a {
+    text-decoration: none;
+}
+
+.get-date .whatsapp-button {
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.get-date .whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.get-date .whatsapp-button i {
+    margin-right: 8px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+}
+
+/* Tablet (pequeña) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #servicios h2{
+        width: 100%;
+        text-align: center;
+    }
+    .item-card p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #encuentranos{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-me h2{
+        width: 240px;
+    }
+    #marcas{
+        background-size: contain;
+    }
+}
+
+/* Desktop (pequeño) */
+@media screen and (min-width: 1200px) {
+    .footer-card {
+        background-size: contain;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-card .services {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-card {
+        width: 33.3%;
+    }
+
+    .contact-me {
+        background-size: auto;
+    }
+
+    .contact-me .img-camaro {
+        width: 50%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-me .card {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-me h2 {
+        width: 280px;
+    }
 }

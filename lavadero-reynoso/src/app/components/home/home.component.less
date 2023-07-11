@@ -1,31 +1,35 @@
-.container-home{
+.container-home {
     background-image: url("../../../assets/images/auto-lavado2.jpg");
     width: 100%;
     height: 100%;
-    background-size: cover;
     background-position: -210px 0px;
+    background-size: cover;
     opacity: 0.6;
     height: 90vh;
 }
-.text-home h2{
+
+.text-home {
     position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
     padding-top: 100px;
+    z-index: 999 !important;
+}
+
+.text-home h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #eb353d;
+}
+
+.text-home h2.first {
+    top: 40%;
+    font-size: 60px;
     color: white;
-    z-index: 999!important;
 }
-.container-home::before{
-    // content: '';
-    // position: absolute;
-    // top: 6vh;
-    // bottom: 4vh;
-    // left: 0;
-    // right: 0;
-    // background-color: rgba(0, 0, 0, 0.6);
-}
-.cards{
+
+.cards {
     background-image: url("../../../assets/images/background-brand.png");
     background-size: cover;
     display: flex;
@@ -33,31 +37,37 @@
     justify-content: center;
     padding-top: 50px;
 }
-.cards .services{
+
+.cards .services {
     font-size: 29px;
     margin-bottom: 35px;
 }
-.item-card{
+
+.item-card {
     text-align: center;
     margin-bottom: 40px;
 }
-.item-card img{
+
+.item-card img {
     border: 1px solid;
     border-radius: 50%;
     width: 180px;
     margin-bottom: 20px;
     padding: 30px;
 }
-.item-card p{
+
+.item-card p {
     font-size: 17px;
     padding: 0px 15px;
 }
+
 // achievements
-.achievements{
+.achievements {
     background-color: white;
     padding: 60px 10px;
 }
-.achievements h2{
+
+.achievements h2 {
     color: black;
     text-align: center;
     border-bottom: 2px solid;
@@ -67,16 +77,19 @@
     padding-bottom: 10px;
     margin-bottom: 50px;
 }
-.achievements img{
+
+.achievements img {
     width: 100%;
 }
+
 // about me
-.about-me{
+.about-me {
     background-image: url("../../../assets/images/background-tools.png");
     background-size: cover;
     padding: 60px 10px;
 }
-.about-me h2{
+
+.about-me h2 {
     color: black;
     text-align: center;
     border-bottom: 2px solid;
@@ -86,11 +99,14 @@
     padding-bottom: 10px;
     margin-bottom: 40px;
 }
-.card-about{
+
+.card-about {
     background-color: white;
     padding: 40px 10px;
+    border-radius: 8px;
 }
-.about-me p{
+
+.about-me p {
     color: black;
     text-align: center;
     letter-spacing: 1px;
@@ -98,19 +114,106 @@
 
 //whatsapp
 .whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:10px;
-    right:5px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 5px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {}
+
+/* Tablet (pequeña) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #servicios {
+        background-size: contain;
+    }
+
+    #servicios h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-card p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-about {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 20px;
+    }
+}
+
+
+/* Desktop (pequeño) */
+@media screen and (min-width: 1200px) {
+    .container-home {
+        background-size: cover;
+        height: 87vh;
+        background-position: 0px;
+    }
+
+    .cards .services {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards {
+        background-size: contain;
+    }
+
+    #servicios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-card {
+        width: 33.3%;
+    }
+
+
+    // achievements
+    .achievements {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .achievements h2 {
+        width: 130px;
+        margin-left: 45.5%;
+        margin-right: 50%;
+    }
+
+    .card-achievements {
+        width: 20%;
+    }
+
+    .about-me {
+        background-size: auto;
+    }
+
+    .about-me .card-about {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me .card-about h2 {
+        width: 180px;
+    }
+}
