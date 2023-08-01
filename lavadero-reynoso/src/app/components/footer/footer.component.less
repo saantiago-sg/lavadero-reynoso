@@ -111,65 +111,96 @@ p {
     color: white;
     text-align: center;
 }
-
 .get-date a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .get-date .whatsapp-button {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 12px 24px;
-    background-color: #25D366;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+
+    background: #000000;
+    color: #25D366;
+    border: 2px solid #25D366;
+    padding: 16px 20px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .get-date .whatsapp-button:hover {
-    background-color: #128C7E;
+    color: #fff;
+}
+
+.whatsapp-button::after {
+    content: "";
+    background: #25D366;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 30px;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+}
+
+.whatsapp-button:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
 }
 
 .get-date .whatsapp-button i {
     margin-right: 8px;
+    font-size: 22px;
 }
-.logo img{
+
+.logo img {
     width: 250px;
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-    .item-card p{
+    .item-card p {
         padding: 0px 20px;
     }
 }
 
 /* Tablet (pequeña) */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    #servicios h2{
+    #servicios h2 {
         width: 100%;
         text-align: center;
     }
-    .item-card p{
+
+    .item-card p {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #encuentranos{
+    #encuentranos {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
-    .contact-me h2{
+
+    .contact-me h2 {
         width: 240px;
     }
-    #marcas{
+
+    #marcas {
         background-size: contain;
     }
 }
